@@ -1,0 +1,17 @@
+{
+  "name": "onexss-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "wrangler:deploy": "npx wrangler deploy",
+    "wrangler:dev": "npx wrangler dev --ip '127.0.0.1' --port 5001 --compatibility-date=2022-11-30 --persist-to=/tmp/wrangler/state",
+    "wrangler:sql": "npx wrangler d1 execute localdb  --local --persist-to=/tmp/wrangler/state --command"
+  },
+  "devDependencies": {
+    "wrangler": "^3.7.0"
+  },
+  "dependencies": {
+    "date-fns": "^2.30.0",
+    "grammy": "^1.18.1"
+  }
+}

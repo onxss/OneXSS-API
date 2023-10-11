@@ -1,0 +1,19 @@
+name = "onexss-api"
+main = "src/index.ts"
+compatibility_date = "2022-11-31"
+compatibility_flags = [ "nodejs_compat" ]
+usage_model = "bundled"
+minify = true
+send_metrics =false
+
+kv_namespaces = [
+    { binding = "JSKV", id = "KV的ID" , preview_id="KV的ID"},
+]
+
+
+d1_databases = [
+    {binding = "DB", database_name = "platform-db" , database_id = "D1数据库ID",preview_id = "D1数据库ID"}
+]
+
+[triggers]
+crons = [ ]
